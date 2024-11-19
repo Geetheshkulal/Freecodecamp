@@ -1,1 +1,102 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey form</title>
+
+    </head>
+
+  <body>
+    <div class="container">
+    <div id="heading">
+      <h1 id="title">Tell us your choice!</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </div>
+
+    <div id="main">
+      <form id="survey-form">
+        <div id="input-fields">
+          <label id="name-label"><b>Name:</b></label>
+          <input id="name" class="name" type="text" required placeholder="Full Name" />
+          
+
+          <label id="email-label"><b>Email:</b></label>
+          <input class="name"
+            id="email"
+            type="email"
+            required
+            placeholder="example@mail.com"
+          />
+
+          <label id="number-label"><b>Age:</b></label>
+          <input class="name"
+            id="number"
+            type="number"
+            required
+            min="5"
+            max="99"
+            placeholder="12+"
+          />
+          <br />
+        </div>
+
+        <div id="dropdown-div">
+          <br />
+          <label id="dropdown-label"
+            ><strong>Programming language you are expert at: </strong></label
+          ><br />
+          <select id="dropdown">
+            <option value="C">C (Programming Language)</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="php">PHP</option>
+            <option value="Js">Java Script</option>
+            <option value="Java">JAVA</option>
+          </select>
+        </div>
+
+        <div id="button-area">
+          <br />
+          <label id="job-label"><b>Employment Status:</b></label
+          ><br />
+          <input type="radio" name="gender" value="employed" checked />
+          Full-time job holder.(Employed)<br />
+          <input type="radio" name="gender" value="freelancer" /> Part-time job
+          holder.(Freelancer)<br />
+        </div>
+
+        <div id="button-area">
+          <br />
+          <label id="os-label"><b>Operating system experience: </b></label
+          ><br />
+          <input type="checkbox" name="os1" value="windows" checked /> I am
+          experienced with Windows-OS<br />
+          <input type="checkbox" name="os2" value="linux" /> I am experienced
+          with Linux-OS<br />
+          <input type="checkbox" name="0s3" value="mac" /> I am experienced with
+          Mac-OS<br />
+        </div>
+
+        <div id="ending">
+          <br /><br />
+          <label id="comments-label"
+            >Do you have any suggestion about this survey?</label
+          ><br />
+          <textarea
+            placeholder="Please feel free to write a review..."
+            rows="4"
+            cols=""
+          ></textarea
+          ><br /><br />
+          <input id="submit" type="submit" />
+        </div>
+      </form>
+    </div>
+</div>
+  </body>
+</html>
